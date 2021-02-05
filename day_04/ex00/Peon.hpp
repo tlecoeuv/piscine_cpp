@@ -8,9 +8,9 @@ class		Peon : public Victim
 public:
 	Peon(std::string name);
 	Peon(Peon const & src);
-	~Peon();
+	virtual ~Peon();
 
-	void		getPolymorphed() const;
+	virtual void	getPolymorphed() const;
 private:
 	Peon();
 };

@@ -3,17 +3,20 @@
 #include "Squad.hpp"
 #include "TacticalMarine.hpp"
 #include "AssaultTerminator.hpp"
+#include "CorrectionMarine.hpp"
 
 int main()
 {
 	ISpaceMarine* bob = new TacticalMarine;
 	ISpaceMarine* jim = new AssaultTerminator;
+	ISpaceMarine* cor = new CorrectionMarine;
 
 	Squad* vlc = new Squad;
 	Squad test_copy;
 
 	vlc->push(bob);
 	vlc->push(jim);
+	vlc->push(cor);
 
 	for (int i = 0; i < vlc->getCount(); ++i)
 	{

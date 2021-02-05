@@ -11,7 +11,7 @@ class Character
 public:
 
 	Character(Character const & src);
-	~Character(void);
+	virtual ~Character(void);
 	Character & operator=(Character const & rhs);
 	Character(std::string const & name);
 

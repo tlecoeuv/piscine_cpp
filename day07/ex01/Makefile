@@ -1,5 +1,5 @@
-NAME		=	convert
-SRCS		=	convert.cpp display.cpp utils.cpp main.cpp
+NAME		=	iter
+SRCS		=	main.cpp
 OBJS		=	$(SRCS:.cpp=.o)
 CXX		=	clang++
 CFLAGS		=	-Wall -Wextra -Werror

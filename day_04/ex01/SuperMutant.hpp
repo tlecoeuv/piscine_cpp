@@ -11,7 +11,7 @@ public:
 	//CANONICAL FUNCS
 	SuperMutant(void);
 	SuperMutant(SuperMutant const & src);
-	~SuperMutant(void);
+	virtual ~SuperMutant(void);
 
 	void	takeDamage(int damage);
 

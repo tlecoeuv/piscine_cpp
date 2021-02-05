@@ -12,7 +12,7 @@ public:
 	//CANONICAL FUNCS
 	RadScorpion(void);
 	RadScorpion(RadScorpion const & src);
-	~RadScorpion(void);
+	virtual ~RadScorpion(void);
 
 private:
 

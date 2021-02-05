@@ -10,7 +10,7 @@ class Squad : public ISquad
 public:
 	Squad(void);
 	Squad(Squad const & src);
-	~Squad(void);
+	virtual ~Squad(void);
 	Squad & operator=(Squad const & rhs);
 
 	virtual int 			getCount() const;

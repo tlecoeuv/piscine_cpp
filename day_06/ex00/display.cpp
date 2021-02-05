@@ -7,7 +7,7 @@ void		displayValues(t_values values)
 	if (values.flags[0] != "")
 		std::cout << values.flags[0] << std::endl;
 	else
-		std::cout << values.vChar << std::endl;
+		std::cout << "'" << values.vChar << "'" << std::endl;
 
 	std::cout << "int: ";
 	if (values.flags[1] != "")
@@ -19,7 +19,7 @@ void		displayValues(t_values values)
 	if (values.flags[2] != "")
 		std::cout << values.flags[2] << std::endl;
 	else
-		std::cout << std::setprecision(1) << std::fixed << values.vFloat 
+		std::cout << std::setprecision(1) << std::fixed << values.vFloat
 			<< "f" << std::endl;
 
 	std::cout << "double: ";

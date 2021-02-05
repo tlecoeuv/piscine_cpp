@@ -10,7 +10,7 @@ class AssaultTerminator : public ISpaceMarine
 public:
 	AssaultTerminator(void);
 	AssaultTerminator(AssaultTerminator const & src);
-	~AssaultTerminator(void);
+	virtual ~AssaultTerminator(void);
 	AssaultTerminator & operator=(AssaultTerminator const & rhs);
 
 	virtual ISpaceMarine*	clone() const;
