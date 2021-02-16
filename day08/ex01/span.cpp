@@ -36,6 +36,20 @@ void	Span::addNumber(int n)
 		throw Span::StorageFullException();
 }
 
+void	Span::addNumber(int n, unsigned int range)
+{
+	if (_tab.size() + range < _N)
+	{
+		for (int i = 0; i < range; i++)
+		{
+			_tab.push_back(n);
+			n++;
+		}
+	}
+	else
+		throw Span::StorageFullException();
+}
+
 unsigned int	Span::shortestSpan()
 {
 	if (_tab.size() <= 1)

@@ -1,8 +1,10 @@
 
 #include "MutantStack.hpp"
+#include <list>
 
 int main()
 {
+	std::cout << "MutantStack test:" << std::endl;
 	MutantStack<int> mstack;
 
 	mstack.push(5);
@@ -30,5 +32,36 @@ int main()
 		++it;
 	}
 	std::stack<int> s(mstack);
+
+	std::cout << "\nList test:" << std::endl;
+	std::list<int> mlist;
+
+	mlist.push_back(5);
+	mlist.push_back(17);
+
+	std::list<int>::iterator itlast = mlist.end();
+	std::cout << *(--itlast) << std::endl;
+
+	mlist.pop_back();
+
+	std::cout << mlist.size() << std::endl;
+
+	mlist.push_back(3);
+	mlist.push_back(5);
+	mlist.push_back(737);
+	mlist.push_back(0);
+
+	std::list<int>::iterator itl = mlist.begin();
+	std::list<int>::iterator itel = mlist.end();
+
+	++itl;
+	--itl;
+	while (itl != itel)
+	{
+		std::cout << *itl << std::endl;
+		++itl;
+	}
+	std::list<int> sl(mlist);
+
 	return 0;
 }

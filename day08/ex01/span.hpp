@@ -18,6 +18,7 @@ public:
 	Span &			operator=(Span const & rhs);
 
 	void			addNumber(int n);
+	void 			addNumber(int n, unsigned int range);
 	unsigned int	shortestSpan();
 	unsigned int	longestSpan();
 
@@ -38,6 +39,9 @@ public:
 			return ("Storage is full");
 		}
 	};
+
+	std::vector<int>::iterator	begin() {return (_tab.begin());}
+	std::vector<int>::iterator	end() {return (_tab.end());}
 
 private:
 	unsigned int		_N;
